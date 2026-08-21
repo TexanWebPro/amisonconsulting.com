@@ -1,13 +1,10 @@
-import { Header } from '#/components/Header'
-import { Footer } from '#/components/Footer'
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({ component: Home })
 
 function Home() {
   return (
     <>
-      <Header />
       <main>
         <section className="py-section-padding-mobile md:py-section-padding-desktop px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 flex flex-col items-center md:items-start space-y-6">
@@ -29,9 +26,13 @@ function Home() {
               <button className="bg-secondary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4">
                 Book a Consult
               </button>
-              <button className="bg-primary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4">
+
+              <Link
+                to="/the-acs-approach"
+                className="bg-primary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4"
+              >
                 Our Methodology
-              </button>
+              </Link>
             </span>
           </div>
           <div className="md:w-1/2 w-full h-100 md:h-150 rounded-lg overflow-hidden border border-slate-gray/20">
@@ -259,7 +260,6 @@ function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

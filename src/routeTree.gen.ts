@@ -10,33 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TheAcsApproachRouteImport } from './routes/the-acs-approach'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TheAcsApproachRoute = TheAcsApproachRouteImport.update({
+  id: '/the-acs-approach',
+  path: '/the-acs-approach',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/the-acs-approach'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/the-acs-approach'
+  id: '__root__' | '/' | '/the-acs-approach'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  TheAcsApproachRoute: typeof TheAcsApproachRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +58,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/the-acs-approach': {
+      id: '/the-acs-approach'
+      path: '/the-acs-approach'
+      fullPath: '/the-acs-approach'
+      preLoaderRoute: typeof TheAcsApproachRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  TheAcsApproachRoute: TheAcsApproachRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

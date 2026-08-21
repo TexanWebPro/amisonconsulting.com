@@ -1,22 +1,26 @@
+import { Link } from '@tanstack/react-router'
+
 export function Header() {
   return (
     <>
       <nav className="bg-background dark:bg-background sticky z-50">
         <div className="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto bg-background dark:bg-background">
           <div className="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
-            <img
-              src="/logo.png"
-              alt="Amison Consulting Company"
-              className="w-50"
-            />
+            <Link to="/">
+              <img
+                src="/logo.png"
+                alt="Amison Consulting Company"
+                className="w-50"
+              />
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
-            <a
+            <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/the-acs-approach"
             >
               The ACS Approach
-            </a>
+            </Link>
             <a
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
               href="#"
@@ -48,5 +52,5 @@ export function Header() {
         </div>
       </nav>
     </>
-  );
+  )
 }
