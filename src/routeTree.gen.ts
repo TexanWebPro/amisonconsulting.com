@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqsRouteImport } from './routes/faqs'
 import { Route as MeetTheFounderRouteImport } from './routes/meet-the-founder'
+import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as TheAcsApproachRouteImport } from './routes/the-acs-approach'
 
 const IndexRoute = IndexRouteImport.update({
@@ -35,6 +36,11 @@ const MeetTheFounderRoute = MeetTheFounderRouteImport.update({
   path: '/meet-the-founder',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SolutionsRoute = SolutionsRouteImport.update({
+  id: '/solutions',
+  path: '/solutions',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TheAcsApproachRoute = TheAcsApproachRouteImport.update({
   id: '/the-acs-approach',
   path: '/the-acs-approach',
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
+  '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
+  '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesById {
@@ -61,20 +69,33 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
+  '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/contact' | '/faqs' | '/meet-the-founder' | '/the-acs-approach'
+    | '/'
+    | '/contact'
+    | '/faqs'
+    | '/meet-the-founder'
+    | '/solutions'
+    | '/the-acs-approach'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/faqs' | '/meet-the-founder' | '/the-acs-approach'
+  to:
+    | '/'
+    | '/contact'
+    | '/faqs'
+    | '/meet-the-founder'
+    | '/solutions'
+    | '/the-acs-approach'
   id:
     | '__root__'
     | '/'
     | '/contact'
     | '/faqs'
     | '/meet-the-founder'
+    | '/solutions'
     | '/the-acs-approach'
   fileRoutesById: FileRoutesById
 }
@@ -83,6 +104,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqsRoute: typeof FaqsRoute
   MeetTheFounderRoute: typeof MeetTheFounderRoute
+  SolutionsRoute: typeof SolutionsRoute
   TheAcsApproachRoute: typeof TheAcsApproachRoute
 }
 
@@ -116,6 +138,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MeetTheFounderRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/solutions': {
+      id: '/solutions'
+      path: '/solutions'
+      fullPath: '/solutions'
+      preLoaderRoute: typeof SolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/the-acs-approach': {
       id: '/the-acs-approach'
       path: '/the-acs-approach'
@@ -131,6 +160,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqsRoute: FaqsRoute,
   MeetTheFounderRoute: MeetTheFounderRoute,
+  SolutionsRoute: SolutionsRoute,
   TheAcsApproachRoute: TheAcsApproachRoute,
 }
 export const routeTree = rootRouteImport

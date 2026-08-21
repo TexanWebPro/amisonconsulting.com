@@ -21,12 +21,12 @@ export function Header() {
             >
               The ACS Approach
             </Link>
-            <a
+            <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/solutions"
             >
               Explore Our Solutions
-            </a>
+            </Link>
             <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
               to="/meet-the-founder"

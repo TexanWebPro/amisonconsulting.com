@@ -18,12 +18,12 @@ export function Footer() {
             >
               The ACS Approach
             </Link>
-            <a
+            <Link
               className="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/solutions"
             >
               Explore Our Solutions
-            </a>
+            </Link>
             <Link
               className="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
               to="/meet-the-founder"
