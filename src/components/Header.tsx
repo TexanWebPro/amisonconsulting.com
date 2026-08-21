@@ -33,12 +33,12 @@ export function Header() {
             >
               Meet The Founder
             </a>
-            <a
+            <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/faqs"
             >
               FAQs
-            </a>
+            </Link>
             <a
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
               href="#"

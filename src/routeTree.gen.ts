@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as FaqsRouteImport } from './routes/faqs'
 import { Route as TheAcsApproachRouteImport } from './routes/the-acs-approach'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TheAcsApproachRoute = TheAcsApproachRouteImport.update({
@@ -25,27 +31,31 @@ const TheAcsApproachRoute = TheAcsApproachRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/faqs': typeof FaqsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/faqs': typeof FaqsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/faqs': typeof FaqsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/the-acs-approach'
+  fullPaths: '/' | '/faqs' | '/the-acs-approach'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/the-acs-approach'
-  id: '__root__' | '/' | '/the-acs-approach'
+  to: '/' | '/faqs' | '/the-acs-approach'
+  id: '__root__' | '/' | '/faqs' | '/the-acs-approach'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  FaqsRoute: typeof FaqsRoute
   TheAcsApproachRoute: typeof TheAcsApproachRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/the-acs-approach': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  FaqsRoute: FaqsRoute,
   TheAcsApproachRoute: TheAcsApproachRoute,
 }
 export const routeTree = rootRouteImport
