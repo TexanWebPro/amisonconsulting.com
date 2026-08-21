@@ -27,12 +27,12 @@ export function Header() {
             >
               Explore Our Solutions
             </a>
-            <a
+            <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/meet-the-founder"
             >
               Meet The Founder
-            </a>
+            </Link>
             <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
               to="/faqs"

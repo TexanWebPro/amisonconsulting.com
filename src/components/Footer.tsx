@@ -24,12 +24,12 @@ export function Footer() {
             >
               Explore Our Solutions
             </a>
-            <a
+            <Link
               className="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/meet-the-founder"
             >
               Meet The Founder
-            </a>
+            </Link>
             <Link
               className="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
               to="/faqs"
