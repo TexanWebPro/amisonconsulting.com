@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/the-acs-approach')({
   component: RouteComponent,
@@ -332,12 +332,15 @@ function RouteComponent() {
               challenges you are experiencing, and determine whether ACS is the
               right fit for your needs.
             </p>
-            <button className="bg-primary text-white font-button text-button py-4 px-8 rounded hover:bg-opacity-90 transition-all duration-300 mt-4 shadow-sm hover:shadow-md flex items-center gap-2">
+            <Link
+              to="/contact"
+              className="bg-primary text-white font-button text-button py-4 px-8 rounded hover:bg-opacity-90 transition-all duration-300 mt-4 shadow-sm hover:shadow-md flex items-center gap-2"
+            >
               Schedule Your Consultation
               <span className="material-symbols-outlined text-[20px]">
                 arrow_forward
               </span>
-            </button>
+            </Link>
           </div>
         </section>
       </main>

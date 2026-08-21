@@ -45,9 +45,12 @@ export function Header() {
             >
               Fee Schedule
             </a>
-            <button className="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity">
+            <Link
+              to="/contact"
+              className="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </nav>

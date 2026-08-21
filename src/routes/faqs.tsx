@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/faqs')({
@@ -1025,12 +1026,12 @@ function RouteComponent() {
                   Process Improvement Advisor.
                 </p>
                 <div>
-                  <a
+                  <Link
                     className="inline-flex items-center justify-center bg-secondary text-on-secondary font-button text-button px-10 py-5 rounded-full hover:bg-opacity-90 transition-all duration-200 ease-in-out active:opacity-80 text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transform"
-                    href="#"
+                    to="/contact"
                   >
                     Schedule Your Consultation
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="bg-surface/10 p-8 rounded-xl text-left mt-16 max-w-2xl mx-auto">

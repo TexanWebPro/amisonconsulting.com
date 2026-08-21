@@ -23,9 +23,12 @@ function Home() {
               manage.
             </p>
             <span className="flex flex-row gap-4">
-              <button className="bg-secondary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4">
+              <Link
+                to="/contact"
+                className="bg-secondary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4"
+              >
                 Book a Consult
-              </button>
+              </Link>
 
               <Link
                 to="/the-acs-approach"
@@ -253,9 +256,12 @@ function Home() {
                 challenges, ask questions, and determine whether ACS is the
                 right fit for your business or personal organization needs.
               </p>
-              <button className="bg-secondary text-on-primary font-button text-button px-10 py-4 rounded hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Link
+                to="/contact"
+                className="bg-secondary text-on-primary font-button text-button px-10 py-4 rounded hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 Schedule Your Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </section>
