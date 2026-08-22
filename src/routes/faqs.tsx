@@ -14,10 +14,6 @@ function RouteComponent() {
             <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero mb-8">
               Questions? Start Here
             </h1>
-            <p className="font-editorial-italic text-editorial-italic text-on-primary/80 max-w-2xl mx-auto text-2xl">
-              Clear answers about our services, process, and how we help
-              organizations work more efficiently.
-            </p>
           </div>
         </section>
         <section className="bg-surface py-20 md:py-32 px-margin-mobile md:px-section-padding-desktop">
@@ -49,7 +45,7 @@ function RouteComponent() {
                   <p className="font-body-lg text-body-lg text-on-surface-variant leading-loose mb-4">
                     ACS's services are designed to apply across industries
                     because the focus is on how work is organized, documented,
-                    and performed. ACS does not need to specialize in a client’s
+                    and performed. ACS does not need to specialize in a client's
                     industry to help identify workflow challenges, clarify
                     processes, and develop practical operational resources.
                   </p>
@@ -79,7 +75,7 @@ function RouteComponent() {
                     </li>
                   </ul>
                   <p className="font-body-lg text-body-lg text-on-surface-variant mt-6 leading-loose">
-                    Services are customized based on each client’s needs, goals,
+                    Services are customized based on each client's needs, goals,
                     and circumstances.
                   </p>
                 </div>
@@ -417,7 +413,7 @@ function RouteComponent() {
                     scope of work.
                   </p>
                   <p className="font-body-lg text-body-lg text-on-surface-variant leading-loose">
-                    The appropriate starting point depends on the client’s needs
+                    The appropriate starting point depends on the client's needs
                     and the complexity of the requested work.
                   </p>
                 </div>
@@ -427,7 +423,7 @@ function RouteComponent() {
                   </h3>
                   <p className="font-body-lg text-body-lg text-on-surface-variant leading-loose mb-4">
                     ACS recommendations are based on the findings of the
-                    assessment and the client’s stated goals. Recommendations
+                    assessment and the client's stated goals. Recommendations
                     are intended to address identified needs rather than
                     encourage unnecessary services.
                   </p>
@@ -467,7 +463,7 @@ function RouteComponent() {
                   What may be included in an improvement project?
                 </h3>
                 <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-loose text-center">
-                  Depending on the client’s needs, a project may include:
+                  Depending on the client's needs, a project may include:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-2xl mx-auto">
                   <ul className="list-none space-y-4 font-body-md text-body-md text-on-surface-variant">
@@ -561,7 +557,7 @@ function RouteComponent() {
                   </h3>
                   <p className="font-body-lg text-body-lg text-on-surface-variant leading-loose mb-4">
                     No. ACS uses a structured approach, but each engagement is
-                    tailored to the client’s goals, challenges, existing
+                    tailored to the client's goals, challenges, existing
                     resources, and operating environment.
                   </p>
                   <p className="font-body-lg text-body-lg text-on-surface-variant leading-loose">
@@ -918,12 +914,12 @@ function RouteComponent() {
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
                   ACS may ask clients to provide a testimonial about their
                   experience. Testimonials are voluntary and will only be
-                  published with the client’s permission.
+                  published with the client's permission.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                   Before publishing a testimonial, ACS will confirm the approved
                   wording and any identifying information that may appear with
-                  it, such as the client’s name, business name, title, or
+                  it, such as the client's name, business name, title, or
                   industry. Clients may choose to provide a testimonial
                   anonymously or decline the request.
                 </p>
@@ -936,7 +932,7 @@ function RouteComponent() {
                   ACS will not publicly identify a client, business, project, or
                   result without permission. Any use of a testimonial, client
                   name, logo, case study, project description, or other
-                  identifying information will require the client’s prior
+                  identifying information will require the client's prior
                   approval.
                 </p>
               </div>
@@ -974,7 +970,7 @@ function RouteComponent() {
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
                   The timeline depends on the scope and complexity of the work,
                   the availability of information and stakeholders, the number
-                  of processes being reviewed, and the client’s response time.
+                  of processes being reviewed, and the client's response time.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                   A projected timeline or milestone schedule will be discussed
@@ -1012,12 +1008,12 @@ function RouteComponent() {
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
               <h2 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero mb-6">
-                Ready to Get Started?
+                Getting Started
               </h2>
             </div>
             <div className="space-y-12">
               <div>
-                <h3 className="font-headline-md text-headline-md mb-4 hidden">
+                <h3 className="font-headline-md text-headline-md mb-4">
                   How do I contact ACS?
                 </h3>
                 <p className="font-body-lg text-body-lg text-on-primary/80 leading-loose mb-10 text-xl">
@@ -1059,7 +1055,7 @@ function RouteComponent() {
                 </h3>
                 <p className="font-body-md text-body-md leading-loose">
                   ACS will aim to explain the available options clearly. If a
-                  request falls outside ACS’s services or requires specialized
+                  request falls outside ACS's services or requires specialized
                   legal, HR, financial, medical, technical, or other
                   professional assistance, the client may be advised to seek the
                   appropriate provider.

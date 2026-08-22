@@ -51,9 +51,6 @@ function RouteComponent() {
                   way forward.
                 </p>
                 <div className="p-6 bg-soft-stone rounded-lg border border-slate-gray/20">
-                  <p className="text-sm font-label-bold text-label-bold text-primary mb-2 uppercase tracking-wider">
-                    Our Focus
-                  </p>
                   <p>
                     ACS primarily supports solopreneurs, microenterprises, and
                     small businesses. On a limited, case-by-case basis, ACS also

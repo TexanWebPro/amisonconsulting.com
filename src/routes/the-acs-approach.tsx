@@ -38,16 +38,17 @@ function RouteComponent() {
                   ACS helps solopreneurs, microenterprises, small businesses,
                   and select individuals identify what is getting in the way,
                   simplify workflows, and create practical tools that make
-                  responsibilities easier to manage. Our approach is thoughtful,
-                  focused, and tailored to each client's needs.
+                  responsibilities easier to manage.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Rather than providing one-size-fits-all advice, ACS examines
-                  what is working, identifies where processes are breaking down,
-                  and recommends practical improvements such as streamlined
-                  workflows, easy-to-follow process guides, checklists,
-                  policies, procedures, and other resources designed to support
-                  greater clarity, consistency, and efficiency.
+                  Our approach is thoughtful, focused, and tailored to each
+                  client's needs. Rather than providing one-size-fits-all
+                  advice, ACS examines what is working, identifies where
+                  processes are breaking down, and recommends practical
+                  improvements such as streamlined workflows, easy-to-follow
+                  process guides, checklists, policies, procedures, and other
+                  resources designed to support greater clarity, consistency,
+                  and efficiency.
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                   Whether you are managing a growing business, leading a small
@@ -115,8 +116,7 @@ function RouteComponent() {
                 Is ACS Right for You?
               </h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                Consider engaging ACS if you identify with any of the following
-                scenarios:
+                ACS may be a good fit if you:
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -212,99 +212,139 @@ function RouteComponent() {
               </p>
             </div>
             <div className="relative w-3/4 mx-auto px-margin-mobile md:px-gutter">
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-gray opacity-30 -translate-x-1/2"></div>
+              <div className="md:block absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-slate-gray opacity-30 -translate-x-1/2"></div>
               <div className="flex flex-col gap-12 md:gap-24 relative">
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
-                  <div className="md:text-right pr-0 md:pr-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="md:text-right pr-0 md:pr-12 pl-6 md:pl-0">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       1. Initial Consultation
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Start with clarity.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Start with clarity. We begin with a complimentary
-                      30-minute virtual consultation to understand your
-                      high-level goals and challenges.
+                      We begin with a complimentary 30-minute virtual
+                      consultation to learn about your needs, understand the
+                      challenges you are experiencing, and discuss your goals.
                     </p>
                   </div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     1
                   </div>
                   <div className="md:pl-12 opacity-0 md:opacity-100 transition-opacity"></div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
                   <div className="hidden md:block md:pr-12"></div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     2
                   </div>
-                  <div className="md:pl-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="pl-6 md:pl-12">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       2. Operational Assessment
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Identify what is getting in the way.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Identify what is getting in the way. We conduct a focused
-                      review of current practices to pinpoint inefficiencies and
-                      areas for improvement.
+                      We conduct a focused review of relevant workflows,
+                      procedures, documentation, responsibilities, and
+                      day-to-day practices to identify inefficiencies,
+                      inconsistencies, barriers, and opportunities for
+                      improvement.
                     </p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
-                  <div className="md:text-right pr-0 md:pr-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="md:text-right pr-0 md:pr-12 pl-6 md:pl-0">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       3. Customized Recommendations
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Create a practical path forward.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Create a practical path forward. Based on the assessment
-                      findings, we present a tailored set of actionable
-                      strategies.
+                      Based on the assessment findings, we provide a
+                      comprehensive report outlining customized and prioritized
+                      recommendations. Depending on your needs, recommendations
+                      may include workflow improvements, process guides,
+                      desk-level procedures, policy and procedure updates,
+                      checklists, and other practical resources.
                     </p>
                   </div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-4 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     3
                   </div>
                   <div className="md:pl-12"></div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
                   <div className="hidden md:block md:pr-12"></div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-4 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     4
                   </div>
-                  <div className="md:pl-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="pl-6 md:pl-12">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       4. Service Agreement
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Define the engagement.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Define the engagement. Before implementation begins, we
-                      agree on the scope, timeline, and specific deliverables.
+                      Before implementation begins, we provide clear
+                      documentation—including the master service agreement, fee
+                      schedule, statement of work, and payment terms—to
+                      establish the scope, deliverables, responsibilities, and
+                      expectations for the engagement.
                     </p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
-                  <div className="md:text-right pr-0 md:pr-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="md:text-right pr-0 md:pr-12 pl-6 md:pl-0">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       5. Implementation &amp; Training
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Put improvements into practice.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Put improvements into practice. We carry out the approved
-                      statement of work, developing tools and training your
-                      team.
+                      We carry out the approved statement of work by developing
+                      and integrating the recommended workflows, procedures,
+                      process guides, and other resources into your day-to-day
+                      operations.
+                      <br />
+                      <br />
+                      When included in the project scope, ACS may also provide
+                      process-specific training to help owners and employees
+                      understand and confidently apply new or revised workflows,
+                      procedures, and operational resources.
                     </p>
                   </div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-4 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     5
                   </div>
                   <div className="md:pl-12"></div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center relative group">
                   <div className="hidden md:block md:pr-12"></div>
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-4 border-primary-container group-hover:scale-110 transition-transform">
+                  <div className="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                     6
                   </div>
-                  <div className="md:pl-12">
-                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2">
+                  <div className="pl-6 md:pl-12">
+                    <h3 className="font-headline-md text-headline-md text-pale-teal mb-2 underline">
                       6. Ongoing Support
                     </h3>
+                    <h4 className="font-headline-md text-headline-sm text-pale-teal mb-2">
+                      Keep progress moving.
+                    </h4>
                     <p className="font-body-md text-body-md text-outline-variant">
-                      Keep progress moving. After the initial engagement, we
-                      offer continued check-ins to ensure sustained success.
+                      After the initial engagement, clients may contract with
+                      ACS for additional projects or choose a monthly retainer
+                      for continued support.
+                      <br />
+                      <br />
+                      Retainer plans reserve an agreed-upon number of service
+                      hours each month for the client's business. Reserved hours
+                      are available during the applicable month and do not roll
+                      over.
                     </p>
                   </div>
                 </div>
