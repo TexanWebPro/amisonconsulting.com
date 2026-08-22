@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as FeeScheduleRouteImport } from './routes/fee-schedule'
 import { Route as MeetTheFounderRouteImport } from './routes/meet-the-founder'
 import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as TheAcsApproachRouteImport } from './routes/the-acs-approach'
@@ -29,6 +30,11 @@ const ContactRoute = ContactRouteImport.update({
 const FaqsRoute = FaqsRouteImport.update({
   id: '/faqs',
   path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeeScheduleRoute = FeeScheduleRouteImport.update({
+  id: '/fee-schedule',
+  path: '/fee-schedule',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MeetTheFounderRoute = MeetTheFounderRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
+  '/fee-schedule': typeof FeeScheduleRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
   '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
+  '/fee-schedule': typeof FeeScheduleRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
   '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/faqs': typeof FaqsRoute
+  '/fee-schedule': typeof FeeScheduleRoute
   '/meet-the-founder': typeof MeetTheFounderRoute
   '/solutions': typeof SolutionsRoute
   '/the-acs-approach': typeof TheAcsApproachRoute
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/faqs'
+    | '/fee-schedule'
     | '/meet-the-founder'
     | '/solutions'
     | '/the-acs-approach'
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/faqs'
+    | '/fee-schedule'
     | '/meet-the-founder'
     | '/solutions'
     | '/the-acs-approach'
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/faqs'
+    | '/fee-schedule'
     | '/meet-the-founder'
     | '/solutions'
     | '/the-acs-approach'
@@ -103,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   FaqsRoute: typeof FaqsRoute
+  FeeScheduleRoute: typeof FeeScheduleRoute
   MeetTheFounderRoute: typeof MeetTheFounderRoute
   SolutionsRoute: typeof SolutionsRoute
   TheAcsApproachRoute: typeof TheAcsApproachRoute
@@ -129,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/faqs'
       fullPath: '/faqs'
       preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fee-schedule': {
+      id: '/fee-schedule'
+      path: '/fee-schedule'
+      fullPath: '/fee-schedule'
+      preLoaderRoute: typeof FeeScheduleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/meet-the-founder': {
@@ -159,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   FaqsRoute: FaqsRoute,
+  FeeScheduleRoute: FeeScheduleRoute,
   MeetTheFounderRoute: MeetTheFounderRoute,
   SolutionsRoute: SolutionsRoute,
   TheAcsApproachRoute: TheAcsApproachRoute,

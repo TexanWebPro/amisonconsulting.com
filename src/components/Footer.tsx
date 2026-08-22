@@ -1,6 +1,8 @@
 import { Link } from '@tanstack/react-router'
 
 export function Footer() {
+  const year = new Date().getFullYear()
+
   return (
     <>
       <footer className="bg-primary dark:bg-surface-container-lowest w-full">
@@ -36,15 +38,15 @@ export function Footer() {
             >
               FAQs
             </Link>
-            <a
+            <Link
               className="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/fee-schedule"
             >
               Fee Schedule
-            </a>
+            </Link>
           </div>
           <div className="font-body-md text-body-md text-on-primary dark:text-primary opacity-80 text-center md:text-right">
-            © 2024 Amison Consulting Services. All rights reserved.
+            © {year} Amison Consulting Services. All rights reserved.
           </div>
         </div>
       </footer>

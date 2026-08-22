@@ -39,12 +39,12 @@ export function Header() {
             >
               FAQs
             </Link>
-            <a
+            <Link
               className="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-              href="#"
+              to="/fee-schedule"
             >
               Fee Schedule
-            </a>
+            </Link>
             <Link
               to="/contact"
               className="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity"
