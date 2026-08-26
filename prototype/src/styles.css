@@ -74,3 +74,14 @@ body {
 /* Subtle interactions */
 .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+
+#drawer-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#drawer-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
