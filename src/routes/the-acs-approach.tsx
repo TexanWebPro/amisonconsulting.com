@@ -85,7 +85,7 @@ function About() {
               alt="Professional Workspace"
               className="w-full aspect-4/5 object-cover rounded-lg shadow-sm border-r-4 border-b-4 border-muted-brass"
               data-alt="A sophisticated, softly lit modern office environment showing organized documents, a sleek laptop, and a minimalist desk setup, embodying professional clarity and structure. Warm ivory and deep navy tones dominate the scene, reflecting a premium consulting atmosphere."
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKDvGgKaaUlKFMnM7Tzj0pI_VoraF5EhtOcHtW-jnvpXbqMHbJ-yyyLWA1zwzbAg0TP4yNOKwy7v1OphjlNVEz1KShayFaI7_1kHXwlEWAOU0FHl86TgahHLGwju4COMXqjVrfl4HnN-0RKZ33GsXCOJm-KHOCZL_X6tX6XOCUZMx5tsc1epg8H9Vy7fEJKsR5M4SIJDqdbU8dcCWqCs3geyLvfUpRtPjgreegUx9P2U1RfYAQ_U7S"
+              src="/images/Steph Pic2.jpg"
             />
           </div>
           <div className="md:col-span-6 md:col-start-7 flex flex-col gap-6 mt-12 md:mt-0">

@@ -55,8 +55,7 @@ function Hero() {
             className="bg-cover bg-center w-full h-full"
             data-alt="A modern, well-lit corporate boardroom featuring a large glass table, comfortable ergonomic chairs, and large windows overlooking a city skyline. The room is bathed in soft, natural daylight with a warm ivory and deep navy color palette, conveying a sense of professional organization and collaborative spirit in a minimalist, high-end consulting environment."
             style={{
-              backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkH1ZF4HqTBdsrAh9VU9I5xZfXHlaucyVer62wJT0w_eQE48X4rQdR5lzj4L8iBYQPgRt-bXnpKnxch8Z6iiNfc_3exLKg-E_PwErWz_V_7SZS8CzCMSiYc5JhmC0_OG7YavtOn_uHxU4Ji2obGXDpPDexdhdER0jBpRSDpmv-v3d8ItcTSf9_QOVshF8Z9bnD6cFVBo6at6_VLNGHjZJoMUJBWl4ZgiGEE79V1ZSDfeuTHZ1VNl4a')",
+              backgroundImage: "url('/images/Working Together2.png')",
             }}
           ></div>
         </div>
@@ -173,8 +172,7 @@ function Roadmap() {
             </p>
             <img
               className="w-full rounded-lg object-cover border border-slate-gray/20 h-64"
-              data-alt="A detailed flat-lay photograph of a neat, minimalist desk setup featuring a structured notebook with architectural wireframes, a sleek silver pen, and a warm cup of coffee on a warm ivory surface. Soft morning light casts gentle shadows, emphasizing a professional, organized, and methodical consulting work environment with subtle deep navy and slate gray accents."
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBytTs4BZ40ppjlq2KRP-eaQaqGrYmJf2arG51AumWzjVIxeyBeChLlCTNq23DPKj-6X6NcnNTjXX_0Ll5de5oj0zfx7RnnLYpZZ3YqiZq9mTkfandXC9j1spsN2_EJYyyX2yrVqWsopB7RGuc31NTSd2Mu59A4hmvsa3vdqik2qivr8VPPuJw0c-uBDXz7cfj7qzeLI4e0DXYyaCvWqToQW9NXZaF6-SRL5FfcNI-Q6KnMGbzJscIx"
+              src="/images/structured_workspace_ledger2.jpg"
             />
           </div>
           <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">

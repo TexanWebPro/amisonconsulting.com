@@ -65,7 +65,7 @@ function RouteComponent() {
               <img
                 alt="Stephanie, Founder of ACS"
                 className="w-full h-auto rounded-xl object-cover shadow-sm border border-slate-gray/10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMh0WaoNipPV91b3iQfLTKqBL4heO8vYkAIIzfh3r9bXbH_p_oymcXiIx_3CYup3x38xMiwDuQ75QgUx_H2K6czfSbmyvYQW6ADwbtW4ChIbyQNfyuf0sURGnfNReJFVLN5_Vr2UvajyIPwX1UHAhHHFExEI6E563WSAoGJRaExfwUhh4w9KQnL1laNvJK6n_dtle1ZD_ISKH_RdtfLrhVq5eu9K6q3gXvDtrc1UlRyll_phUHCe_"
+                src="/images/Steph Pic2.jpg"
               />
             </div>
           </div>

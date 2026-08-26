@@ -81,7 +81,7 @@ function ContactInfo() {
             alt="Office desk setup"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             data-alt="A meticulously organized modern office desk top-down view. Features a sleek metallic laptop, a minimalist notebook bound in muted brass, and a finely crafted pen resting on a warm ivory surface. Natural, soft sunlight casts gentle shadows, creating a calm, professional, and strategic atmosphere consistent with a premium consulting firm. High resolution, photorealistic."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzKtfeedZwVKSPsQqwq1PjwVjuAHsV3Kx17RxrASCB5kgFC3LWrHynBGpn4nWYiyqLj_KmdtUyoOnHXJwdDeki28qTu0XoJMkt7hwvygTdMWmfpQYzMuKnCLXmC2BsVeaRENUf6SDtq3szC-Pgto1zGgqHXRYML7w7B5WRsvcZcuprnj_wIujlU0qdwN865BnGiGOkY7gWOwGyNPBuub27dgiaEc4zYV17kCowcC0OnskQeIKn1j1i"
+            src="/images/Contract-Image-jpg.png"
           />
           <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
         </div>
