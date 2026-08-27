@@ -22,9 +22,6 @@ function Header() {
         <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-primary mb-6">
           Fee Schedule
         </h1>
-        {/* <p className="font-editorial-italic text-editorial-italic text-slate-gray max-w-2xl mx-auto">
-            Transparent, structured pricing for rigorous operational analysis.
-          </p> */}
       </header>
     </>
   )
