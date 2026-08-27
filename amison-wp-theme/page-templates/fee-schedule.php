@@ -8,9 +8,10 @@
 get_header();
 ?>
 
-<main id="main-content" class="grow">
+<main class="max-w-container mx-auto px-gutter py-section-padding-mobile md:py-section-padding-desktop">
 
-    <?php get_template_part( 'template-parts/contact/title' ); ?>
+    <?php get_template_part( 'template-parts/fee-schedule/header' ); ?>
+    <?php get_template_part( 'template-parts/fee-schedule/tiers' ); ?>
 
 </main>
 

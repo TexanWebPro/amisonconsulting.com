@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<main id="main-content" class="grow">
+<main class="grow">
 
     <?php
     while ( have_posts() ) :

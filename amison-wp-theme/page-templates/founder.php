@@ -8,9 +8,9 @@
 get_header();
 ?>
 
-<main id="main-content" class="grow">
+<main class="grow">
 
-    <?php get_template_part( 'template-parts/contact/title' ); ?>
+    <?php get_template_part( 'template-parts/meet-the-founder/founder.php' ); ?>
 
 </main>
 

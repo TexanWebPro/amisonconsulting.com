@@ -427,6 +427,38 @@ The goal is to preserve a consistent design system rather than accumulate one-of
 
 ---
 
+## Updating the Tailwind CSS Build Artifact
+
+The production WordPress theme does **not** contain the Tailwind CSS build tooling. The file:
+
+`amison-wp-theme/assets/css/tailwind-build-artifact.css`
+
+is a compiled artifact generated from the approved TanStack Start prototype.
+
+If a future design change requires modifying the custom Tailwind configuration or changing/adding Tailwind class names in the production theme, **do not edit `tailwind-build-artifact.css` directly.**
+
+Instead, make the changes in the prototype first.
+
+### Process
+
+1. Make the required Tailwind configuration or class-name changes in the prototype.
+2. Run the prototype's production build command.
+3. Locate the newly generated CSS artifact:
+   `prototype/.output/public/assets/styles-{randomLetters}.css`
+4. Replace the existing production theme artifact:
+
+`amison-wp-theme/assets/css/tailwind-build-artifact.css`
+
+with the newly generated CSS file.
+
+5. Deploy the updated WordPress theme.
+
+### Important
+
+The WordPress theme should contain compiled Tailwind CSS only. Tailwind, Node.js, npm, and the Tailwind build configuration do not need to be installed or run on the production WordPress server.
+
+The prototype is the source of truth for the site's Tailwind design system. The CSS file in the WordPress theme is a generated production artifact and should not be manually edited.
+
 # Design Changes vs. Content Changes
 
 Before editing anything, determine whether the requested change is a **content change** or a **design change**.

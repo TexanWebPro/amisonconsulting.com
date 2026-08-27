@@ -12,13 +12,7 @@ get_header();
 
     <?php get_template_part('template-parts/solutions/clarity'); ?>
 
-    <?php get_template_part('template-parts/solutions/workflow-optimization'); ?>
-
-    <?php get_template_part('template-parts/solutions/documentation'); ?>
-
-    <?php get_template_part('template-parts/solutions/implementation-support'); ?>
-
-    <?php get_template_part('template-parts/solutions/ongoing-support'); ?>
+    <?php get_template_part('template-parts/solutions/solutions'); ?>
 
     <?php get_template_part('template-parts/solutions/note'); ?>
 
