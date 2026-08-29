@@ -24,6 +24,13 @@ function amison_enqueue_assets() {
         $theme_version
     );
 
+    wp_enqueue_style(
+        'amison-theme-fonts',
+        get_template_directory_uri() . '/assets/css/fonts.css',
+        array(),
+        $theme_version
+    );
+
     wp_enqueue_script(
         'amison-main',
         get_template_directory_uri() . '/assets/js/main.js',
