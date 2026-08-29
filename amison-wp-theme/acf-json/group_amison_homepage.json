@@ -1,0 +1,617 @@
+{
+  "key": "group_amison_homepage",
+  "title": "Homepage",
+  "fields": [
+    {
+      "key": "field_home_hero",
+      "label": "Hero",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_home_hero_title",
+      "label": "Title",
+      "name": "hero_title",
+      "aria-label": "",
+      "type": "group",
+      "instructions": "The three-line primary heading displayed in the hero.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_home_hero_title_line_1",
+          "label": "Line 1",
+          "name": "line_1",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Process",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_hero_title_line_2",
+          "label": "Line 2",
+          "name": "line_2",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Improvement",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_hero_title_line_3",
+          "label": "Line 3",
+          "name": "line_3",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "34",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Advisor",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        }
+      ]
+    },
+    {
+      "key": "field_home_hero_headline",
+      "label": "Headline",
+      "name": "hero_headline",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Clear processes. Better ways of working.",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_hero_description",
+      "label": "Description",
+      "name": "hero_description",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "ACS helps individuals and small businesses bring order to disorganization, simplify challenging workflows, and create practical solutions that make everyday responsibilities easier to manage.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_home_hero_primary_button",
+      "label": "Primary Button",
+      "name": "hero_primary_button",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_home_hero_secondary_button",
+      "label": "Secondary Button",
+      "name": "hero_secondary_button",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_home_hero_image",
+      "label": "Image",
+      "name": "hero_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "The image displayed on the right side of the hero.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp"
+    },
+    {
+      "key": "field_home_value",
+      "label": "Value",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_home_value_label",
+      "label": "Section Label",
+      "name": "value_label",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "THE VALUE",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_value_headline",
+      "label": "Headline",
+      "name": "value_headline",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Better processes create better possibilities.",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_value_description",
+      "label": "Description",
+      "name": "value_description",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "ACS helps solopreneurs, microenterprises, small businesses, and select individuals understand what is getting in the way of their progress. Through thoughtful assessment and practical improvement, we help replace guesswork and disorganization with clearer workflows, documented procedures, and sustainable ways of working.",
+      "maxlength": "",
+      "rows": 6,
+      "placeholder": "",
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_home_value_items",
+      "label": "Value Items",
+      "name": "value_items",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 3,
+      "max": 3,
+      "collapsed": "field_home_value_item_title",
+      "button_label": "Add Value Item",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_home_value_item_icon",
+          "label": "Icon",
+          "name": "icon",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Material Symbols Outlined icon name.",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "25",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "search",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_value_item_title",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "25",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_value_item_description",
+          "label": "Description",
+          "name": "description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": 5,
+          "placeholder": "",
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+    {
+      "key": "field_home_roadmap",
+      "label": "Roadmap",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_home_roadmap_label",
+      "label": "Section Label",
+      "name": "roadmap_label",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "THE ROADMAP",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_roadmap_headline",
+      "label": "Headline",
+      "name": "roadmap_headline",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "A clear path from operational challenges to practical solutions.",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_roadmap_image",
+      "label": "Image",
+      "name": "roadmap_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp"
+    },
+    {
+      "key": "field_home_roadmap_items",
+      "label": "Roadmap Steps",
+      "name": "roadmap_items",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 1,
+      "max": 0,
+      "collapsed": "field_home_roadmap_item_title",
+      "button_label": "Add Roadmap Step",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_home_roadmap_item_number",
+          "label": "Number",
+          "name": "number",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Use a two-digit number such as 01, 02, or 03.",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "20",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": 2,
+          "placeholder": "01",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_roadmap_item_title",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "35",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_home_roadmap_item_description",
+          "label": "Description",
+          "name": "description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "45",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": 4,
+          "placeholder": "",
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+    {
+      "key": "field_home_cta",
+      "label": "Call to Action",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_home_cta_heading",
+      "label": "Heading",
+      "name": "cta_heading",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_home_cta_description",
+      "label": "Description",
+      "name": "cta_description",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_home_cta_button",
+      "label": "Button",
+      "name": "cta_button",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "front-page.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Editable homepage content for the Amison Consulting website.",
+  "show_in_rest": 0,
+  "display_title": ""
+}

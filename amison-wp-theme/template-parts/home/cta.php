@@ -15,30 +15,21 @@
               </span>
             </div>
             <h2 class="font-headline-lg text-headline-lg text-primary leading-tight tracking-tight">
-              BEGIN THE
-              <br />
-              CONVERSATION
+              <?php the_field( 'cta_heading' ); ?>
             </h2>
             <div class="h-0.5 w-12 bg-muted-brass mt-8 hidden md:block"></div>
           </div>
 
           <div class="md:w-7/12 flex flex-col items-start">
             <p class="font-body-lg text-body-lg text-primary mb-8 leading-relaxed">
-              Schedule a complimentary 30-minute virtual consultation with our
-              Process Improvement Advisor to discuss what is not working,
-              clarify your goals, and explore practical ways ACS can support
-              you.
+              <?php the_field( 'cta_description' ); ?>
             </p>
-            <p class="font-body-md text-body-md text-primary mb-12 leading-relaxed">
-              This initial conversation is an opportunity to share your
-              challenges, ask questions, and determine whether ACS is the right
-              fit for your business or personal organization needs.
-            </p>
+            <?php $button = get_field( 'cta_button' ); ?>
             <a
-              href="/contact"
+              href="<?php echo esc_url( $button['url'] ); ?>"
               class="bg-secondary text-on-primary font-button text-button px-10 py-4 rounded hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Schedule Your Consultation
+				<?php echo esc_html( $button['title'] ); ?>
             </a>
           </div>
         </div>

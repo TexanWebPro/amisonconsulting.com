@@ -16,7 +16,7 @@ get_header();
 
     <?php get_template_part( 'template-parts/home/roadmap' ); ?>
 
-    <?php get_template_part( 'template-parts/common/cta' ); ?>
+    <?php get_template_part( 'template-parts/home/cta' ); ?>
 
 </main>
 
