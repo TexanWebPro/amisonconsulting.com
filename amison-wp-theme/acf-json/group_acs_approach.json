@@ -1,0 +1,340 @@
+{
+  "key": "group_acs_approach",
+  "title": "The ACS Approach",
+  "fields": [
+    {
+      "key": "field_acs_approach_philosophy_tab",
+      "label": "Philosophy",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_acs_approach_philosophy_label",
+      "label": "Section Label",
+      "name": "philosophy_label",
+      "type": "text",
+      "required": 1,
+      "default_value": "The ACS Approach"
+    },
+    {
+      "key": "field_acs_approach_philosophy_title",
+      "label": "Title",
+      "name": "philosophy_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Our Philosophy"
+    },
+    {
+      "key": "field_acs_approach_philosophy_quote",
+      "label": "Quote",
+      "name": "philosophy_quote",
+      "type": "text",
+      "required": 1,
+      "default_value": "Creating clarity, consistency, and momentum in the way you work."
+    },
+    {
+      "key": "field_acs_approach_philosophy_intro",
+      "label": "Introduction",
+      "name": "philosophy_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 4,
+      "new_lines": "wpautop",
+      "default_value": "At Amison Consulting Services, Inc. (ACS), we believe operational challenges often arise when the way work gets done has not been clearly defined, documented, or aligned with the goals of the people involved."
+    },
+    {
+      "key": "field_acs_approach_philosophy_body",
+      "label": "Body Content",
+      "name": "philosophy_body",
+      "type": "repeater",
+      "required": 1,
+      "min": 1,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Paragraph",
+      "sub_fields": [
+        {
+          "key": "field_acs_approach_philosophy_body_text",
+          "label": "Paragraph",
+          "name": "paragraph",
+          "type": "textarea",
+          "required": 1,
+          "rows": 5,
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+
+    {
+      "key": "field_acs_approach_about_tab",
+      "label": "About ACS",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_acs_approach_about_image",
+      "label": "Image",
+      "name": "about_image",
+      "type": "image",
+      "required": 1,
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "mime_types": "jpg,jpeg,png,webp"
+    },
+    {
+      "key": "field_acs_approach_about_image_alt",
+      "label": "Image Alt Text",
+      "name": "about_image_alt",
+      "type": "text",
+      "required": 1,
+      "default_value": "Professional Workspace"
+    },
+    {
+      "key": "field_acs_approach_about_title",
+      "label": "Title",
+      "name": "about_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "About ACS"
+    },
+    {
+      "key": "field_acs_approach_about_subtitle",
+      "label": "Subtitle",
+      "name": "about_subtitle",
+      "type": "text",
+      "required": 1,
+      "default_value": "Where practical experience meets meaningful improvement."
+    },
+    {
+      "key": "field_acs_approach_about_body",
+      "label": "Body Content",
+      "name": "about_body",
+      "type": "repeater",
+      "required": 1,
+      "min": 1,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Paragraph",
+      "sub_fields": [
+        {
+          "key": "field_acs_approach_about_body_text",
+          "label": "Paragraph",
+          "name": "paragraph",
+          "type": "textarea",
+          "required": 1,
+          "rows": 5,
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+
+    {
+      "key": "field_acs_approach_right_fit_tab",
+      "label": "Is ACS Right for You?",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_acs_approach_right_fit_title",
+      "label": "Title",
+      "name": "right_fit_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Is ACS Right for You?"
+    },
+    {
+      "key": "field_acs_approach_right_fit_intro",
+      "label": "Introduction",
+      "name": "right_fit_intro",
+      "type": "text",
+      "required": 1,
+      "default_value": "ACS may be a good fit if you:"
+    },
+    {
+      "key": "field_acs_approach_right_fit_items",
+      "label": "Fit Criteria",
+      "name": "right_fit_items",
+      "type": "repeater",
+      "required": 1,
+      "min": 1,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Criterion",
+      "collapsed": "field_acs_approach_right_fit_item_text",
+      "sub_fields": [
+        {
+          "key": "field_acs_approach_right_fit_item_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "text",
+          "required": 1,
+          "instructions": "Material Symbols Outlined icon name.",
+          "default_value": "psychology_alt"
+        },
+        {
+          "key": "field_acs_approach_right_fit_item_text",
+          "label": "Criterion",
+          "name": "text",
+          "type": "textarea",
+          "required": 1,
+          "rows": 3,
+          "new_lines": ""
+        }
+      ]
+    },
+
+    {
+      "key": "field_acs_approach_method_tab",
+      "label": "The ACS Method",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_acs_approach_method_title",
+      "label": "Title",
+      "name": "method_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "The ACS Method"
+    },
+    {
+      "key": "field_acs_approach_method_subtitle",
+      "label": "Subtitle",
+      "name": "method_subtitle",
+      "type": "text",
+      "required": 1,
+      "default_value": "A clear path from operational challenges to practical solutions."
+    },
+    {
+      "key": "field_acs_approach_method_intro",
+      "label": "Introduction",
+      "name": "method_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 5,
+      "new_lines": "wpautop",
+      "default_value": "ACS's process is designed to help clients understand what is not working, determine what needs to change, and move thoughtfully toward implementation. Services are customized based on the needs identified during the initial consultation and assessment."
+    },
+    {
+      "key": "field_acs_approach_method_steps",
+      "label": "Method Steps",
+      "name": "method_steps",
+      "type": "repeater",
+      "required": 1,
+      "min": 6,
+      "max": 6,
+      "layout": "block",
+      "button_label": "Add Method Step",
+      "collapsed": "field_acs_approach_method_step_title",
+      "sub_fields": [
+        {
+          "key": "field_acs_approach_method_step_title",
+          "label": "Title",
+          "name": "title",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_acs_approach_method_step_subtitle",
+          "label": "Subtitle",
+          "name": "subtitle",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_acs_approach_method_step_description",
+          "label": "Description",
+          "name": "description",
+          "type": "textarea",
+          "required": 1,
+          "rows": 6,
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+
+    {
+      "key": "field_acs_approach_cta_tab",
+      "label": "Call to Action",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_acs_approach_cta_icon",
+      "label": "Icon",
+      "name": "cta_icon",
+      "type": "text",
+      "required": 1,
+      "instructions": "Material Symbols Outlined icon name.",
+      "default_value": "forum"
+    },
+    {
+      "key": "field_acs_approach_cta_title",
+      "label": "Title",
+      "name": "cta_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Begin the Conversation"
+    },
+    {
+      "key": "field_acs_approach_cta_subtitle",
+      "label": "Subtitle",
+      "name": "cta_subtitle",
+      "type": "text",
+      "required": 1,
+      "default_value": "A clearer way forward starts here."
+    },
+    {
+      "key": "field_acs_approach_cta_description",
+      "label": "Description",
+      "name": "cta_description",
+      "type": "textarea",
+      "required": 1,
+      "rows": 5,
+      "new_lines": "wpautop",
+      "default_value": "Schedule a complimentary 30-minute virtual consultation with our Process Improvement Advisor to discuss your goals, explore the challenges you are experiencing, and determine whether ACS is the right fit for your needs."
+    },
+    {
+      "key": "field_acs_approach_cta_button",
+      "label": "Button",
+      "name": "cta_button",
+      "type": "link",
+      "required": 1,
+      "return_format": "array",
+      "default_value": {
+        "title": "Schedule Your Consultation",
+        "url": "/contact",
+        "target": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-the-acs-approach.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Editable content for the ACS Approach page. Layout and design remain controlled by the theme.",
+  "show_in_rest": 0
+}
