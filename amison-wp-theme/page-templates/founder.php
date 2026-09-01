@@ -10,7 +10,7 @@ get_header();
 
 <main class="grow">
 
-    <?php get_template_part( 'template-parts/meet-the-founder/founder.php' ); ?>
+    <?php get_template_part( 'template-parts/meet-the-founder/founder' ); ?>
 
 </main>
 
