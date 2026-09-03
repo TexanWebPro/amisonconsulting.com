@@ -1,0 +1,871 @@
+{
+  "key": "group_amison_faqs",
+  "title": "FAQs",
+  "fields": [
+    {
+      "key": "field_faq_banner_tab",
+      "label": "Banner",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_banner_title",
+      "label": "Title",
+      "name": "banner_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Questions? Start Here"
+    },
+    {
+      "key": "field_faq_about_tab",
+      "label": "About ACS",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_about_title",
+      "label": "Section Title",
+      "name": "about_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "About ACS"
+    },
+    {
+      "key": "field_faq_about_questions",
+      "label": "Questions",
+      "name": "about_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 4,
+      "max": 4,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_about_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_about_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_about_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_about_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_services_tab",
+      "label": "Services and Scope",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_services_title",
+      "label": "Section Title",
+      "name": "services_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Services and Scope"
+    },
+    {
+      "key": "field_faq_services_questions",
+      "label": "Questions",
+      "name": "services_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 7,
+      "max": 7,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_services_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_services_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_services_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_services_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_process_tab",
+      "label": "The ACS Process",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_process_title",
+      "label": "Section Title",
+      "name": "process_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "The ACS Process"
+    },
+    {
+      "key": "field_faq_process_steps",
+      "label": "Process Steps",
+      "name": "process_steps",
+      "type": "repeater",
+      "required": 1,
+      "min": 3,
+      "max": 3,
+      "layout": "block",
+      "button_label": "Add Process Step",
+      "sub_fields": [
+        {
+          "key": "field_faq_process_step_number",
+          "label": "Number",
+          "name": "number",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_process_step_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_process_steps_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        }
+      ]
+    },
+    {
+      "key": "field_faq_process_assessment_question",
+      "label": "Assessment Question",
+      "name": "assessment_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What is included in an Operational Assessment?"
+    },
+    {
+      "key": "field_faq_process_assessment_intro",
+      "label": "Assessment Intro",
+      "name": "assessment_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Depending on the agreed scope, an Operational Assessment may include:"
+    },
+    {
+      "key": "field_faq_process_assessment_items",
+      "label": "Assessment Items",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_process_assessment_items_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_process_assessment_note",
+      "label": "Assessment Note",
+      "name": "assessment_note",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "The exact scope, deliverables, timeline, and fee are established before the assessment begins."
+    },
+    {
+      "key": "field_faq_process_additional",
+      "label": "Additional Questions",
+      "name": "process_additional",
+      "type": "repeater",
+      "required": 1,
+      "min": 3,
+      "max": 3,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_process_additional_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_process_additional_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_process_additional_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_process_additional_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_projects_tab",
+      "label": "Projects and Deliverables",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_projects_title",
+      "label": "Section Title",
+      "name": "projects_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Projects and Deliverables"
+    },
+    {
+      "key": "field_faq_projects_question",
+      "label": "Featured Question",
+      "name": "projects_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What may be included in an improvement project?"
+    },
+    {
+      "key": "field_faq_projects_intro",
+      "label": "Featured Intro",
+      "name": "projects_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Depending on the client's needs, a project may include:"
+    },
+    {
+      "key": "field_faq_projects_items",
+      "label": "Project Items",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_projects_items_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_projects_questions",
+      "label": "Additional Questions",
+      "name": "projects_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 5,
+      "max": 5,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_projects_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_projects_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_projects_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_projects_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_fees_tab",
+      "label": "Fees and Agreements",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_fees_title",
+      "label": "Section Title",
+      "name": "fees_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Fees and Agreements"
+    },
+    {
+      "key": "field_faq_fees_pricing_question",
+      "label": "Pricing Question",
+      "name": "pricing_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "How are ACS services priced?"
+    },
+    {
+      "key": "field_faq_fees_pricing_intro",
+      "label": "Pricing Intro",
+      "name": "pricing_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Fees depend on the type, complexity, and scope of the engagement. Services may be provided through:"
+    },
+    {
+      "key": "field_faq_fees_pricing_options",
+      "label": "Pricing Options",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_fees_pricing_options_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_fees_pricing_note",
+      "label": "Pricing Note",
+      "name": "pricing_note",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "The pricing structure and payment terms are explained before work begins."
+    },
+    {
+      "key": "field_faq_fees_agreement_question",
+      "label": "Agreement Question",
+      "name": "agreement_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What is included in a service agreement?"
+    },
+    {
+      "key": "field_faq_fees_agreement_intro",
+      "label": "Agreement Intro",
+      "name": "agreement_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Depending on the engagement, documentation may include:"
+    },
+    {
+      "key": "field_faq_fees_agreement_items",
+      "label": "Agreement Items",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_fees_agreement_items_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_fees_questions",
+      "label": "Additional Questions",
+      "name": "fees_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 5,
+      "max": 5,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_fees_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_fees_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_fees_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_fees_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_individuals_tab",
+      "label": "Individual Services",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_individuals_title",
+      "label": "Section Title",
+      "name": "individuals_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Individual Services"
+    },
+    {
+      "key": "field_faq_individuals_icon",
+      "label": "Icon",
+      "name": "individuals_icon",
+      "type": "text",
+      "required": 1,
+      "default_value": "person"
+    },
+    {
+      "key": "field_faq_individuals_question",
+      "label": "Intro Question",
+      "name": "individuals_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "Does ACS work with individuals?"
+    },
+    {
+      "key": "field_faq_individuals_answer",
+      "label": "Intro Answer",
+      "name": "individuals_answer",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_faq_individuals_support_question",
+      "label": "Support Question",
+      "name": "individuals_support_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What types of personal organization support may be available?"
+    },
+    {
+      "key": "field_faq_individuals_support_intro",
+      "label": "Support Intro",
+      "name": "individuals_support_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Services may include:"
+    },
+    {
+      "key": "field_faq_individuals_support_items",
+      "label": "Support Items",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_individuals_support_items_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_individuals_questions",
+      "label": "Additional Questions",
+      "name": "individuals_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 2,
+      "max": 2,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_individuals_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_individuals_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_individuals_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_individuals_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_experience_tab",
+      "label": "Client Experience and Privacy",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_experience_title",
+      "label": "Section Title",
+      "name": "experience_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Client Experience and Privacy"
+    },
+    {
+      "key": "field_faq_experience_questions",
+      "label": "Questions",
+      "name": "experience_questions",
+      "type": "repeater",
+      "required": 1,
+      "min": 8,
+      "max": 8,
+      "layout": "block",
+      "button_label": "Add FAQ",
+      "sub_fields": [
+        {
+          "key": "field_faq_experience_questions_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "key": "field_faq_experience_questions_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea",
+          "required": 0,
+          "rows": 6,
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_faq_experience_questions_items",
+          "label": "Items",
+          "name": "items",
+          "type": "repeater",
+          "required": 0,
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "Add Item",
+          "sub_fields": [
+            {
+              "key": "field_faq_experience_questions_items_item",
+              "label": "Item",
+              "name": "item",
+              "type": "text",
+              "required": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_faq_cta_tab",
+      "label": "Getting Started",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_cta_title",
+      "label": "Section Title",
+      "name": "cta_title",
+      "type": "text",
+      "required": 1,
+      "default_value": "Getting Started"
+    },
+    {
+      "key": "field_faq_cta_question",
+      "label": "Contact Question",
+      "name": "cta_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "How do I contact ACS?"
+    },
+    {
+      "key": "field_faq_cta_description",
+      "label": "Contact Description",
+      "name": "cta_description",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "Use the Schedule Your Consultation button to request a complimentary 30-minute virtual consultation with the ACS Process Improvement Advisor."
+    },
+    {
+      "key": "field_faq_cta_button_text",
+      "label": "Button Text",
+      "name": "cta_button_text",
+      "type": "text",
+      "required": 1,
+      "default_value": "Schedule Your Consultation"
+    },
+    {
+      "key": "field_faq_cta_button_url",
+      "label": "Button URL",
+      "name": "cta_button_url",
+      "type": "text",
+      "required": 1,
+      "default_value": "/contact"
+    },
+    {
+      "key": "field_faq_cta_prepare_question",
+      "label": "Preparation Question",
+      "name": "cta_prepare_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What should I prepare for the consultation?"
+    },
+    {
+      "key": "field_faq_cta_prepare_intro",
+      "label": "Preparation Intro",
+      "name": "cta_prepare_intro",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop",
+      "default_value": "No formal preparation is required. It may be helpful to consider:"
+    },
+    {
+      "key": "field_faq_cta_prepare_items",
+      "label": "Preparation Items",
+      "name": "items",
+      "type": "repeater",
+      "required": 0,
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_cta_prepare_items_item",
+          "label": "Item",
+          "name": "item",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "field_faq_cta_fit_question",
+      "label": "Fit Question",
+      "name": "cta_fit_question",
+      "type": "text",
+      "required": 1,
+      "default_value": "What if ACS is not the right fit?"
+    },
+    {
+      "key": "field_faq_cta_fit_answer",
+      "label": "Fit Answer",
+      "name": "cta_fit_answer",
+      "type": "textarea",
+      "required": 1,
+      "rows": 6,
+      "new_lines": "wpautop"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-faqs.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Editable content for the FAQs page. Layout, typography, spacing, responsive behavior, icons, colors, card placement, and presentation remain controlled by the theme. FAQ answers use a single optional textarea so editors may enter one or multiple paragraphs; associated item lists are independently optional.",
+  "show_in_rest": 0
+}

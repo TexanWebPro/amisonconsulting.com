@@ -6,8 +6,11 @@
  */
 ?>
 
-    <header class="text-center mb-16 md:mb-24">
-        <h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-primary mb-6">
-            Fee Schedule
+      <div className="text-center mb-16 max-w-3xl mx-auto">
+        <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-primary mb-6">
+          Ready to Get Started?
         </h1>
-    </header>
+        <p className="font-editorial-italic text-editorial-italic text-on-surface-variant">
+          Schedule a free consultation with us!
+        </p>
+      </div>

@@ -126,55 +126,40 @@
         <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto bg-background dark:bg-background">
             <div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
                 <a href="/">
-                    <img
-                    src="/logo.png"
-                    alt="Amison Consulting Company"
-                    class="w-50"
-                    />
+					<?php 
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						if ( has_custom_logo() ) {
+							echo '<img class="w-50" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+						} else {
+							echo '<h1>' . get_bloginfo('name') . '</h1>';
+						}
+					?>
                 </a>
             </div>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a
-                    class="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-                    href="/the-acs-approach"
-                >
-                    The ACS Approach
-                </a>
-                <a
-                    class="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-                    href="/solutions"
-                >
-                    Explore Our Solutions
-                </a>
-                <a
-                    class="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-                    href="/meet-the-founder"
-                >
-                    Meet The Founder
-                </a>
-                <a
-                    class="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-                    href="/faqs"
-                >
-                    FAQs
-                </a>
-                <a
-                    class="text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200"
-                    href="/fee-schedule"
-                >
-                    Fee Schedule
-                </a>
-                <a
-                    href="/contact"
-                    class="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity"
-                >
-                    Contact Us
-                </a>
-            </div>
+			<?php 
+                add_filter ( 'nav_menu_css_class', 'amison_menu_item_class', 10, 4 );
+                
+                function amison_menu_item_class ( $classes, $item, $args, $depth ){
+                    $classes[] = 'text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200';
+                    return $classes;
+                }
+                
+                wp_nav_menu( array(
+                    'theme_location'  => 'primary',                // (string) Identified slug from register_nav_menus()
+                    'container'       => 'nav',             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
+                    'menu_class'      => 'hidden md:flex space-x-8 items-center',            // (string) Class applied to the <ul> element
+                    'echo'            => true,              // (bool) True to print the menu, false to return string output
+                    'fallback_cb'     => 'wp_page_menu',    // (callable|bool) Fallback function if menu/location doesn't exist
+                    'items_wrap'      => '<div id="%1$s" class="%2$s" style="list-style-type: none;">%3$s</ul>', // (string) How the list items are wrapped
+                    'item_spacing'    => 'preserve',        // (string) 'preserve' or 'discard' whitespace in HTML output
+                    'depth'           => 0,                 // (int) Max depth for nested dropdowns (0 = all levels, -1 = flat list)
+                ) );
+            ?>
 
             <button
-            class="md:hidden p-2 text-icon-gold active:scale-95 duration-200 hover:bg-muted-brass transition-colors rounded-full flex items-center justify-center"
-            id="menu-btn"
+                class="md:hidden p-2 text-icon-gold active:scale-95 duration-200 hover:bg-muted-brass transition-colors rounded-full flex items-center justify-center"
+                id="menu-btn"
             >
                 <span
                     class="material-symbols-outlined"

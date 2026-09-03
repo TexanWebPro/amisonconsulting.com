@@ -49,6 +49,13 @@ function amison_theme_setup() {
      */
     add_theme_support( 'menus' );
 
+    /*
+     * Add logo support.
+     */
+    add_theme_support( 'custom-logo' , array(
+        'height'      => 150,
+        'width'       => 200,
+    ));
 
     /*
      * Make the theme translation-ready.
@@ -57,6 +64,7 @@ function amison_theme_setup() {
         'amison-consulting',
         get_template_directory() . '/languages'
     );
+
 }
 
 add_action( 'after_setup_theme', 'amison_theme_setup' );
