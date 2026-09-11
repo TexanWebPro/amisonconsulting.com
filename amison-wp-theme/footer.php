@@ -13,40 +13,21 @@
             >
             Amison Consulting Services
             </a>
-            <div class="flex flex-wrap justify-center gap-6 mb-8 md:mb-0">
-            <a
-                class="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-                href="/the-acs-approach"
-            >
-                The ACS Approach
-            </a>
-            <a
-                class="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-                href="/solutions"
-            >
-                Explore Our Solutions
-            </a>
-            <a
-                class="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-                href="/meet-the-founder"
-            >
-                Meet The Founder
-            </a>
-            <a
-                class="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-                href="/faqs"
-            >
-                FAQs
-            </a>
-            <a
-                class="text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200"
-                href="/fee-schedule"
-            >
-                Fee Schedule
-            </a>
-            </div>
+			<?php
+                
+                wp_nav_menu( array(
+                    'theme_location'  => 'footer',                // (string) Identified slug from register_nav_menus()
+                    'container'       => false,             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
+                    'menu_class'      => 'flex flex-wrap justify-center gap-6 mb-8 md:mb-0 text-on-primary text-button',            // (string) Class applied to the <ul> element
+                    'echo'            => true,              // (bool) True to print the menu, false to return string output
+                    'fallback_cb'     => '',    // (callable|bool) Fallback function if menu/location doesn't exist
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s" style="list-style-type: none; color: #FFF;">%3$s</ul>', // (string) How the list items are wrapped
+                    'item_spacing'    => 'preserve',        // (string) 'preserve' or 'discard' whitespace in HTML output
+                    'depth'           => 0,                 // (int) Max depth for nested dropdowns (0 = all levels, -1 = flat list)
+                ) );
+            ?>
             <div class="font-body-md text-body-md text-on-primary dark:text-primary opacity-80 text-center md:text-right">
-            © {year} Amison Consulting Services. All rights reserved.
+            © <?php echo date('Y'); ?> Amison Consulting Services. All rights reserved.
             </div>
         </div>
     </footer>

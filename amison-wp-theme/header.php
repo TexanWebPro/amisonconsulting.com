@@ -138,28 +138,74 @@
                 </a>
             </div>
 			<?php 
-                add_filter ( 'nav_menu_css_class', 'amison_menu_item_class', 10, 4 );
-                
-                function amison_menu_item_class ( $classes, $item, $args, $depth ){
-                    $classes[] = 'text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200';
-                    return $classes;
-                }
-                
-                wp_nav_menu( array(
-                    'theme_location'  => 'primary',                // (string) Identified slug from register_nav_menus()
-                    'container'       => 'nav',             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
-                    'menu_class'      => 'hidden md:flex space-x-8 items-center',            // (string) Class applied to the <ul> element
-                    'echo'            => true,              // (bool) True to print the menu, false to return string output
-                    'fallback_cb'     => 'wp_page_menu',    // (callable|bool) Fallback function if menu/location doesn't exist
-                    'items_wrap'      => '<div id="%1$s" class="%2$s" style="list-style-type: none;">%3$s</ul>', // (string) How the list items are wrapped
-                    'item_spacing'    => 'preserve',        // (string) 'preserve' or 'discard' whitespace in HTML output
-                    'depth'           => 0,                 // (int) Max depth for nested dropdowns (0 = all levels, -1 = flat list)
-                ) );
-            ?>
+				add_filter( 'nav_menu_css_class', 'amison_menu_item_class', 10, 4 );
+
+				function amison_menu_item_class( $classes, $item, $args, $depth ) {
+
+					if ( $args->theme_location !== 'primary' ) {
+						$classes[] = 'flex flex-wrap justify-center gap-6 mb-8 md:mb-0 text-on-primary font-button text-button hover:text-muted-brass transition-colors duration-200';
+						return $classes;
+					}
+
+					// Get the menu items in their actual menu order.
+					$menu_items = wp_get_nav_menu_items( $args->menu );
+
+					if ( ! $menu_items ) {
+						return $classes;
+					}
+
+					// Get only top-level menu items.
+					$top_level_items = array_values(
+						array_filter(
+							$menu_items,
+							function ( $menu_item ) {
+								return (int) $menu_item->menu_item_parent === 0;
+							}
+						)
+					);
+
+					// Get the final top-level menu item.
+					$last_item = end( $top_level_items );
+
+					if ( $last_item && $item->ID === $last_item->ID ) {
+
+						// Final menu item = CTA.
+						$classes[] = 'bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity';
+
+					} else {
+
+						// All other menu items = normal navigation.
+						$classes[] = 'text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200';
+
+					}
+
+					return $classes;
+				}						
+			wp_nav_menu( array(
+				'theme_location'  => 'primary',                // (string) Identified slug from register_nav_menus()
+				'menu'            => '',                // (int|string|WP_Term) Accepts menu ID, slug, or name
+				'container'       => 'nav',             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
+				'container_class' => '',                // (string) Class applied to the container element
+				'container_id'    => '',                // (string) ID applied to the container element
+				'container_aria_label' => '',           // (string) The aria-label attribute for the container element
+				'menu_class'      => 'hidden md:flex space-x-8 items-center',            // (string) Class applied to the <ul> element
+				'menu_id'         => '',                // (string) ID applied to the <ul> element
+				'echo'            => true,              // (bool) True to print the menu, false to return string output
+				'fallback_cb'     => 'wp_page_menu',    // (callable|bool) Fallback function if menu/location doesn't exist
+				'before'          => '',                // (string) HTML text prepended to each <a> element link
+				'after'           => '',                // (string) HTML text appended after each <a> element link
+				'link_before'     => '',                // (string) HTML text prepended to link text (inside <a>)
+				'link_after'      => '',                // (string) HTML text appended after link text (inside <a>)
+				'items_wrap'      => '<ul id="%1$s" class="%2$s" style="list-style-type: none;">%3$s</ul>', // (string) How the list items are wrapped
+				'item_spacing'    => 'preserve',        // (string) 'preserve' or 'discard' whitespace in HTML output
+				'depth'           => 0,                 // (int) Max depth for nested dropdowns (0 = all levels, -1 = flat list)
+				'walker'          => '',                // (object) Custom walker instance (e.g., new Custom_Nav_Walker)
+			) ); ?>
+
 
             <button
-                class="md:hidden p-2 text-icon-gold active:scale-95 duration-200 hover:bg-muted-brass transition-colors rounded-full flex items-center justify-center"
-                id="menu-btn"
+            class="md:hidden p-2 text-icon-gold active:scale-95 duration-200 hover:bg-muted-brass transition-colors rounded-full flex items-center justify-center"
+            id="menu-btn"
             >
                 <span
                     class="material-symbols-outlined"
