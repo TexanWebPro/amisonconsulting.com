@@ -1,0 +1,253 @@
+{
+  "key": "group_4001918ff46c4",
+  "title": "Amison Consulting — Fee Schedule",
+  "fields": [
+    {
+      "key": "field_4c0516fd28344",
+      "label": "Page Title",
+      "name": "fee_schedule_title",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "Main heading displayed at the top of the Fee Schedule page.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Fee Schedule",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_4cc2233cb4074",
+      "label": "Tiers",
+      "name": "tiers",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "Add as many or as few pricing tiers as desired. Non-primary tiers alternate between the odd/even background styles. A tier marked Primary always uses the Enterprise Level treatment.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "tier_title",
+      "button_label": "Add Tier",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_4046df2ac5bb4",
+          "label": "Tier Title",
+          "name": "tier_title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Name displayed as the tier heading.",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_6b722f1a72cc4",
+          "label": "Tier Label",
+          "name": "tier_label",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Optional label displayed beneath the title, such as “(2 - 10 employees)” or “Enterprise Level”.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_5f4f1556e6a94",
+          "label": "Price",
+          "name": "tier_price",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Complete displayed price text, e.g. $500 or Pricing available upon request.",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_f2e48de47d2b4",
+          "label": "Description",
+          "name": "tier_description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "Optional description displayed beneath the price.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": 4,
+          "placeholder": "",
+          "new_lines": "br"
+        },
+        {
+          "key": "field_3223de8701444",
+          "label": "Included Items",
+          "name": "tier_items",
+          "aria-label": "",
+          "type": "repeater",
+          "instructions": "Add as many or as few included items as needed.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layout": "table",
+          "pagination": 0,
+          "min": 0,
+          "max": 0,
+          "collapsed": "",
+          "button_label": "Add Item",
+          "rows_per_page": 20,
+          "sub_fields": [
+            {
+              "key": "field_073f61fb96294",
+              "label": "Item",
+              "name": "item",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "One checklist item.",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": ""
+            }
+          ]
+        },
+        {
+          "key": "field_c88f6ac6b7974",
+          "label": "Primary Tier",
+          "name": "tier_primary",
+          "aria-label": "",
+          "type": "true_false",
+          "instructions": "Mark this tier as primary. A primary tier uses the Enterprise Level visual treatment regardless of its position.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "message": "",
+          "default_value": 0,
+          "ui": 1,
+          "ui_on_text": "Yes",
+          "ui_off_text": "No"
+        },
+        {
+          "key": "field_0fbf658018fc4",
+          "label": "Button Text",
+          "name": "tier_button_text",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Text displayed on the tier CTA button.",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Inquire Now",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_c3a6c30ba5c64",
+          "label": "Button URL",
+          "name": "tier_button_url",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Optional URL for the tier CTA. Leave empty to use the Contact page.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-fee-schedule.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF content model for the Fee Schedule page. The Tiers component is an ACF Pro repeater. The contact form is intentionally excluded.",
+  "show_in_rest": 0,
+  "modified": 1789373828
+}

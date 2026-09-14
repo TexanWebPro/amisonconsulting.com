@@ -17,7 +17,7 @@
 
     <?php wp_head(); ?>
 
-    <script>
+<script id="tailwind-config">
     tailwind.config = {
         theme: {
             extend: {
@@ -154,33 +154,52 @@
 						return $classes;
 					}
 
-					// Get only top-level menu items.
-					$top_level_items = array_values(
-						array_filter(
-							$menu_items,
-							function ( $menu_item ) {
-								return (int) $menu_item->menu_item_parent === 0;
-							}
-						)
-					);
-
-					// Get the final top-level menu item.
-					$last_item = end( $top_level_items );
-
-					if ( $last_item && $item->ID === $last_item->ID ) {
-
-						// Final menu item = CTA.
-						$classes[] = 'bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity';
-
-					} else {
-
-						// All other menu items = normal navigation.
-						$classes[] = 'text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200';
-
-					}
-
 					return $classes;
 				}						
+
+			add_filter( 'nav_menu_link_attributes', 'amison_menu_link_attributes', 10, 4 );
+
+            function amison_menu_link_attributes( $atts, $item, $args, $depth ) {
+
+                if ( $args->theme_location !== 'primary' ) {
+                    return $atts;
+                }
+
+                // Get the menu items in their actual menu order.
+                $menu_items = wp_get_nav_menu_items( $args->menu );
+
+                if ( ! $menu_items ) {
+                    return $atts;
+                }
+
+                // Get only top-level menu items.
+                $top_level_items = array_values(
+                    array_filter(
+                        $menu_items,
+                        function ( $menu_item ) {
+                            return (int) $menu_item->menu_item_parent === 0;
+                        }
+                    )
+                );
+
+                // Get the final top-level menu item.
+                $last_item = end( $top_level_items );
+
+                if ( $last_item && $item->ID === $last_item->ID ) {
+
+                    // Final menu item = CTA.
+                    $atts['class'] = 'bg-primary text-on-primary font-button text-button px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity';
+
+                } else {
+
+                    // All other menu items = normal navigation.
+                    $atts['class'] = 'text-on-surface dark:text-on-surface-variant font-button text-button hover:text-muted-brass transition-colors duration-200';
+
+                }
+
+                return $atts;
+            }
+			
 			wp_nav_menu( array(
 				'theme_location'  => 'primary',                // (string) Identified slug from register_nav_menus()
 				'menu'            => '',                // (int|string|WP_Term) Accepts menu ID, slug, or name
