@@ -60,9 +60,9 @@
                 <h3 class="font-headline-md text-headline-md mb-4">
                   <?php echo esc_html($full_width_left_text['question']); ?>
                 </h3>
-                <p class="font-body-md text-body-md leading-loose">
+                <span class="font-body-md text-body-md leading-loose">
                   <?php echo wp_kses_post($full_width_left_text['answer']); ?>
-                </p>
+                </span>
               </div>
           <?php endif; ?>
         </div>

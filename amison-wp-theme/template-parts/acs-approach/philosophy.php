@@ -22,15 +22,15 @@
           </div>
           <div class="grid md:grid-cols-12 gap-gutter">
             <div class="md:col-span-5">
-              <p class="font-body-lg text-body-lg text-on-surface font-bold leading-relaxed">
+              <span class="font-body-lg text-body-lg text-on-surface font-bold leading-relaxed">
         				<?php the_field( 'philosophy_intro' ); ?>
-              </p>
+              </span>
               <div class="hidden md:block w-12 h-0.5 bg-muted-brass mt-8"></div>
             </div>
-            <div class="md:col-span-6 md:col-start-7 flex flex-col gap-8 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <div class="md:col-span-6 md:col-start-7 flex flex-col gap-8">
               <?php if ( have_rows( 'philosophy_body' ) ) : ?>
               <?php while ( have_rows( 'philosophy_body' ) ) : the_row(); ?>
-                <?php echo wp_kses_post( get_sub_field( 'paragraph' ) ); ?>
+                  <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed"><?php echo wp_kses_post( get_sub_field( 'paragraph' ) ); ?></span>
               <?php endwhile; ?>
               <?php endif; ?>
             </div>

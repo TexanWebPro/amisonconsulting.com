@@ -21,9 +21,9 @@
           <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
             <div class="text-center mb-20">
               <div class="mb-16 p-8 bg-soft-stone/50 border-l-4 border-muted-brass rounded-r-lg text-left max-w-4xl mx-auto">
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
 					        <?php the_field( 'value_description' ); ?>
-                </p>
+                </span>
               </div>
             </div>
 		      </div>

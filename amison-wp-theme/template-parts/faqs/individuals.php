@@ -50,9 +50,9 @@
                   <h3 class="font-headline-md text-headline-md text-primary-container mb-4">
                     <?php echo esc_html( get_sub_field( 'question' ) ); ?>
                   </h3>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant leading-loose">
+                  <span class="font-body-lg text-body-lg text-on-surface-variant leading-loose">
                     <?php echo wp_kses_post( get_sub_field( 'answer' ) ); ?>
-                  </p>
+                  </span>
                 </div>
               <?php endwhile; ?>
 				      <?php endif; ?>

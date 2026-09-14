@@ -37,9 +37,9 @@
                     <h4 class="font-headline-md text-headline-sm text-pale-teal mb-2">
                       <?php echo esc_html( get_sub_field( 'subtitle' ) ); ?>
                     </h4>
-                    <p class="font-body-md text-body-md text-outline-variant">
+                    <span class="font-body-md text-body-md text-outline-variant flex flex-col gap-8">
                       <?php echo wp_kses_post( get_sub_field( 'description' ) ); ?>
-                    </p>
+                    </span>
                   </div>
                   <div class="flex absolute left-0 md:left-1/2 top-1/2 -translate-x-10 md:-translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-secondary text-white items-center justify-center font-label-bold text-label-bold z-10 border-primary-container group-hover:scale-110 transition-transform">
                       <?php echo esc_html( $step_number ); ?>
@@ -57,9 +57,9 @@
                     <h4 class="font-headline-md text-headline-sm text-pale-teal mb-2">
                       <?php echo esc_html( get_sub_field( 'subtitle' ) ); ?>
                     </h4>
-                    <p class="font-body-md text-body-md text-outline-variant">
+                    <span class="font-body-md text-body-md text-outline-variant flex flex-col gap-8">
                       <?php echo wp_kses_post( get_sub_field( 'description' ) ); ?>
-                    </p>
+                    </span>
                   </div>
                 <?php endif; ?>
               </div>

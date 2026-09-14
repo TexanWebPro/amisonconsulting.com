@@ -32,7 +32,7 @@
 				      <?php echo esc_html( $primary_button['title'] ); ?>
             </a>
 
-			      <?php $secondary_button = get_field( 'hero_primary_button' ); ?>
+			      <?php $secondary_button = get_field( 'hero_secondary_button' ); ?>
             <a
               href="<?php echo esc_url( $secondary_button['url'] ); ?>"
               class="bg-primary text-on-primary font-button text-button px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4"

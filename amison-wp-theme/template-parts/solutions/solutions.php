@@ -45,9 +45,9 @@
                 <!-- Content Card -->
                 <div class="md:col-span-7 bg-white p-8 rounded-lg border border-slate-gray/20 card-hover <?php echo $is_odd ? '' : 'order-2 md:order-1'; ?>">
 
-                    <p class="font-body-md text-body-md text-on-surface mb-6">
+                    <span class="font-body-md text-body-md text-on-surface mb-6 flex flex-col gap-8">
                         <?php echo wp_kses_post( $description ); ?>
-                    </p>
+                    </span>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
 

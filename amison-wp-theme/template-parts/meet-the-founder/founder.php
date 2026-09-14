@@ -18,9 +18,9 @@
                 </p>
               </div>
               <div class="space-y-6 text-on-surface-variant max-w-prose">
-                <p class="font-body-lg text-body-lg">
+                <span class="font-body-lg text-body-lg pb-6">
                   <?php the_field( 'founder_lead' ); ?>
-                </p>
+                </span><br />
                 <?php if ( have_rows( 'founder_bio' ) ) : ?>
                 <?php while ( have_rows( 'founder_bio' ) ) : the_row(); ?>
                   <?php echo wp_kses_post( get_sub_field( 'paragraph' ) ); ?>
