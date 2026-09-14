@@ -159,8 +159,7 @@
 
 			add_filter( 'nav_menu_link_attributes', 'amison_menu_link_attributes', 10, 4 );
 
-            function amison_menu_link_attributes( $atts, $item, $args, $depth ) {
-
+            function amison_menu_link_attributes( $atts, $item, $args, $depth ) {				
                 if ( $args->theme_location !== 'primary' ) {
                     return $atts;
                 }
@@ -168,11 +167,7 @@
                 // Get the menu items in their actual menu order.
                 $menu_items = wp_get_nav_menu_items( $args->menu );
 
-                if ( ! $menu_items ) {
-                    return $atts;
-                }
-
-                // Get only top-level menu items.
+				// Get only top-level menu items.
                 $top_level_items = array_values(
                     array_filter(
                         $menu_items,
@@ -181,6 +176,29 @@
                         }
                     )
                 );
+
+                // Get the final top-level menu item.
+                $last_item = end( $top_level_items );
+				
+				if ( isset( $args->menu_context ) && $args->menu_context === 'mobile' ) {
+					if ( $last_item && $item->ID === $last_item->ID ) {
+
+                    // Final menu item = CTA.
+					$atts['class'] = 'px-4 py-3 hover:bg-surface-variant hover:text-secondary font-bold transition-all duration-200 bg-secondary text-on-primary font-button text-button';
+
+                } else {
+
+                    // All other menu items = normal navigation.
+					$atts['class'] = 'px-4 py-3 text-on-surface-variant hover:bg-surface-variant hover:text-secondary font-bold transition-all duration-200';
+
+                }
+
+					return $atts;
+				}
+
+                if ( ! $menu_items ) {
+                    return $atts;
+                }
 
                 // Get the final top-level menu item.
                 $last_item = end( $top_level_items );
@@ -203,11 +221,12 @@
 			wp_nav_menu( array(
 				'theme_location'  => 'primary',                // (string) Identified slug from register_nav_menus()
 				'menu'            => '',                // (int|string|WP_Term) Accepts menu ID, slug, or name
-				'container'       => 'nav',             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
+				'container'       => false,             // (string) What to wrap the ul with ('div' or 'nav'). Use false for no container.
 				'container_class' => '',                // (string) Class applied to the container element
 				'container_id'    => '',                // (string) ID applied to the container element
 				'container_aria_label' => '',           // (string) The aria-label attribute for the container element
 				'menu_class'      => 'hidden md:flex space-x-8 items-center',            // (string) Class applied to the <ul> element
+		        'menu_context'    => 'desktop',
 				'menu_id'         => '',                // (string) ID applied to the <ul> element
 				'echo'            => true,              // (bool) True to print the menu, false to return string output
 				'fallback_cb'     => 'wp_page_menu',    // (callable|bool) Fallback function if menu/location doesn't exist
@@ -234,3 +253,40 @@
             </button>
         </div>
     </nav>
+<div
+    class="fixed inset-0 bg-deep-navy/80 backdrop-blur-sm z-55 hidden"
+    id="drawer-overlay"
+></div>
+
+<aside
+    class="md:hidden hidden fixed inset-y-0 right-0 w-3/4 bg-surface-container-low px-6 rounded-r-none dark:bg-deep-navy divide-border-gold-alpha shadow-2xl z-60"
+    id="drawer"
+>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex flex-col items-center justify-start">
+        <?php
+        if ( has_custom_logo() ) {
+            echo wp_get_attachment_image(
+                get_theme_mod( 'custom_logo' ),
+                'full',
+                false,
+                array(
+                    'class'   => 'w-3/4 object-contain py-4',
+                    'alt'     => get_bloginfo( 'name' ),
+                )
+            );
+        }
+        ?>
+    </a>
+
+    <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'primary',
+            'container'      => false,
+            'menu_class'     => 'flex-1 py-0 flex flex-col gap-6',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s" style="list-style-type: none;">%3$s</ul>', // (string) How the list items are wrapped
+	        'menu_context'   => 'mobile',
+        )
+    );
+    ?>
+</aside>

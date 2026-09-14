@@ -40,8 +40,8 @@ function amison_enqueue_assets() {
     );
 
     wp_enqueue_script(
-        'amison-main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        'amison-mobile-menu',
+        get_template_directory_uri() . '/assets/js/mobile-menu.js',
         array(),
         $theme_version,
         true
