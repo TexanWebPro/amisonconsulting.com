@@ -31,7 +31,7 @@
 					<?php echo esc_html( get_sub_field( 'title' ) ); ?>
 				  </h4>
 				  <p class="font-body-md text-body-md text-on-surface-variant">
-					<?php echo esc_html( get_sub_field( 'description' ) ); ?>
+					<?php echo wp_kses_post( get_sub_field( 'description' ) ); ?>
 				  </p>
 				</div>
 			  <?php endwhile; ?>

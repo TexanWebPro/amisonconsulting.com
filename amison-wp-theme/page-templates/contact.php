@@ -12,7 +12,7 @@ get_header();
 
     <?php get_template_part( 'template-parts/contact/title' ); ?>
     
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <?php get_template_part( 'template-parts/contact/contact-info' ); ?>
 
         <?php get_template_part( 'template-parts/contact/contact-form' ); ?>

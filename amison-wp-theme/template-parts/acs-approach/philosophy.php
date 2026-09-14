@@ -27,12 +27,10 @@
               </p>
               <div class="hidden md:block w-12 h-0.5 bg-muted-brass mt-8"></div>
             </div>
-            <div class="md:col-span-6 md:col-start-7 flex flex-col gap-8">
+            <div class="md:col-span-6 md:col-start-7 flex flex-col gap-8 font-body-md text-body-md text-on-surface-variant leading-relaxed">
               <?php if ( have_rows( 'philosophy_body' ) ) : ?>
               <?php while ( have_rows( 'philosophy_body' ) ) : the_row(); ?>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  <?php echo esc_html( get_sub_field( 'paragraph' ) ); ?>
-                </p>
+                <?php echo wp_kses_post( get_sub_field( 'paragraph' ) ); ?>
               <?php endwhile; ?>
               <?php endif; ?>
             </div>

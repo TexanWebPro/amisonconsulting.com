@@ -27,7 +27,7 @@
 			        <?php if ( have_rows( 'about_body' ) ) : ?>
               <?php while ( have_rows( 'about_body' ) ) : the_row(); ?>
                 <p>
-                  <?php echo esc_html( get_sub_field( 'paragraph' ) ); ?>
+                  <?php echo wp_kses_post( get_sub_field( 'paragraph' ) ); ?>
                 </p>
               <?php endwhile; ?>
               <?php endif; ?>

@@ -1,0 +1,204 @@
+{
+  "key": "group_acs_contact",
+  "title": "Contact Page",
+  "fields": [
+    {
+      "key": "field_b57c02c596a04",
+      "label": "Contact Page",
+      "name": "contact_page",
+      "aria-label": "",
+      "type": "group",
+      "instructions": "Editable content for the Contact page. The contact form is intentionally excluded.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_5fbcd65639ac4",
+          "label": "Page Title",
+          "name": "contact_title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Ready to Get Started?",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_556c04363b3f4",
+          "label": "Page Subtitle",
+          "name": "contact_subtitle",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Schedule a free consultation with us!",
+          "maxlength": "",
+          "rows": 2,
+          "placeholder": "",
+          "new_lines": "br"
+        },
+        {
+          "key": "field_c07b15971e594",
+          "label": "Direct Contact Title",
+          "name": "direct_contact_title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Direct Contact",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_9364ce1bb38e4",
+          "label": "Email Address",
+          "name": "contact_email",
+          "aria-label": "",
+          "type": "email",
+          "instructions": "Displayed email address and used for the mailto link.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "stephaniec@amisonconsulting.com"
+        },
+        {
+          "key": "field_82ee11d56cf04",
+          "label": "Phone Number",
+          "name": "contact_phone",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Displayed phone number and used for the tel link.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "+1 (951)-746-0662",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_86b975699f264",
+          "label": "Location",
+          "name": "contact_location",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Temecula, CA 92592, US",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_c8fb4d7960bd4",
+          "label": "Contact Image",
+          "name": "contact_image",
+          "aria-label": "",
+          "type": "image",
+          "instructions": "Image displayed beside the Direct Contact card. Return format: Image Array.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_1fd89adaafbd4",
+          "label": "Contact Image Alt Text",
+          "name": "contact_image_alt",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Office desk setup",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-contact.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Content fields for the Contact page prototype. The contact form is excluded because its fields and processing are not content-managed through this ACF group.",
+  "show_in_rest": 0,
+  "modified": 1789148487
+}

@@ -1,0 +1,301 @@
+/**
+ * Gravity Forms
+ *
+ * Amison Consulting
+ *
+ * Styles Gravity Forms to match the Amison Consulting
+ * design system and React prototype.
+ * 
+ * Converted from the Tailwind Classes in the Prototype
+ * by ChatGPT.
+ */
+
+
+/* ==========================================================================
+   Form Wrapper
+   ========================================================================== */
+
+.gform_wrapper {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   Form Fields
+   ========================================================================== */
+
+.gform_wrapper .gform_fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+
+/* ==========================================================================
+   Field Labels
+   ========================================================================== */
+
+.gform_wrapper .gfield_label {
+    margin-bottom: 8px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+
+    color: #000a1e;
+}
+
+
+/* ==========================================================================
+   Field Containers
+   ========================================================================== */
+
+.gform_wrapper .gfield {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+
+/* ==========================================================================
+   Text Inputs
+   ========================================================================== */
+
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="tel"],
+.gform_wrapper input[type="date"],
+.gform_wrapper input[type="url"],
+.gform_wrapper input[type="number"],
+.gform_wrapper input[type="password"],
+.gform_wrapper select,
+.gform_wrapper textarea {
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dcdad2;
+    border-radius: 0.125rem;
+
+    padding: 12px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+
+    color: #1b1c17;
+
+    transition:
+        border-color 200ms ease,
+        box-shadow 200ms ease;
+}
+
+
+/* ==========================================================================
+   Placeholder Text
+   ========================================================================== */
+
+.gform_wrapper input::placeholder,
+.gform_wrapper textarea::placeholder {
+    color: #708090;
+    opacity: 1;
+}
+
+
+/* ==========================================================================
+   Focus States
+   ========================================================================== */
+
+.gform_wrapper input:focus,
+.gform_wrapper .gfield select:focus
+.gform_wrapper textarea:focus {
+    outline: none;
+
+    border-color: #28676c;
+
+    box-shadow: 0 0 0 2px rgba(40, 103, 108, 0.15);
+}
+
+
+/* ==========================================================================
+   Select
+   ========================================================================== */
+
+.gform_wrapper .gfield select {
+    appearance: none;
+    padding-right: 40px;
+}
+
+
+/* ==========================================================================
+   Textarea
+   ========================================================================== */
+
+.gform_wrapper textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Submit Button
+   ========================================================================== */
+
+.gform_wrapper .gform_footer {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.gform_wrapper input[type="submit"],
+.gform_wrapper button[type="submit"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #000a1e;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 0.125rem;
+
+    padding: 16px 32px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 200ms ease;
+}
+
+
+.gform_wrapper input[type="submit"]:hover,
+.gform_wrapper button[type="submit"]:hover {
+    background-color: #002147;
+}
+
+
+/* ==========================================================================
+   Required Fields
+   ========================================================================== */
+
+.gform_wrapper .gfield_required {
+    color: #ba1a1a;
+}
+
+
+/* ==========================================================================
+   Validation
+   ========================================================================== */
+
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+    border-color: #ba1a1a;
+}
+
+
+.gform_wrapper .gfield_validation_message,
+.gform_wrapper .validation_message {
+    margin-top: 4px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #ba1a1a;
+}
+
+
+/* ==========================================================================
+   Success Message
+   ========================================================================== */
+
+.gform_wrapper .gform_confirmation_message {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #1b1c17;
+}
+
+
+/* ==========================================================================
+   Desktop Two-Column Layout
+   ========================================================================== */
+
+@media (min-width: 768px) {
+
+    .gform_wrapper .gform_fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+        row-gap: 0;
+    }
+
+    /*
+     * Full-width fields.
+     *
+     * Add the Gravity Forms CSS class "gf_full_width"
+     * to fields that should span both columns.
+     */
+
+    .gform_wrapper .gfield.gf_full_width {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ==========================================================================
+   Mobile
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+    .gform_wrapper input[type="submit"],
+    .gform_wrapper button[type="submit"] {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/* ==========================================================================
+   Dark Mode
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+    .gform_wrapper .gfield_label {
+        color: #ffffff;
+    }
+
+    .gform_wrapper input[type="text"],
+    .gform_wrapper input[type="email"],
+    .gform_wrapper input[type="tel"],
+    .gform_wrapper input[type="date"],
+    .gform_wrapper input[type="url"],
+    .gform_wrapper input[type="number"],
+    .gform_wrapper input[type="password"],
+    .gform_wrapper select,
+    .gform_wrapper textarea {
+        background-color: #ffffff;
+        color: #1b1c17;
+    }
+
+}

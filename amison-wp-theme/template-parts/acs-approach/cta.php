@@ -20,9 +20,9 @@
           <p class="font-editorial-italic text-editorial-italic text-secondary -mt-4">
 			      <?php the_field( 'cta_subtitle' ); ?>
           </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          <span class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
             <?php the_field( 'cta_description' ); ?>
-          </p>
+          </span>
           <a
             href="<?php echo esc_url( get_field( 'cta_button' )['url'] ); ?>"
             class="bg-primary text-white font-button text-button py-4 px-8 rounded hover:bg-opacity-90 transition-all duration-300 mt-4 shadow-sm hover:shadow-md flex items-center gap-2"

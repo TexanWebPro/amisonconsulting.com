@@ -20,7 +20,7 @@
 			      <?php echo esc_html( get_field( 'hero_headline' ) ); ?>
           </p>
           <p class="w-3/4">
-            <?php echo esc_html( get_field( 'hero_description' ) ); ?>
+            <?php echo wp_kses_post( get_field( 'hero_description' ) ); ?>
           </p>
           <span class="flex flex-row gap-4">
 			  
